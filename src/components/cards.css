@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cardStyle {
+  width: 40%;
+}
+@media only screen and (max-width: 480px) {
+  .list {
+    display: block;
+    flex-direction: row;
+  }
+  .cardStyle {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .list {
+    display: block;
+    flex-direction: row;
+  }
+  .cardStyle {
+    width: auto;
+  }
+}

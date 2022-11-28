@@ -1,0 +1,52 @@
+.allColor {
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.holder {
+  padding: 25px;
+  min-width: 200px;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  display: none;
+}
+label {
+  width: 160px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(240, 148, 255, 0.139);
+  width: 100vw;
+}
