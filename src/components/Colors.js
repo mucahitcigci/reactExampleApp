@@ -1,16 +1,25 @@
 import React from "react";
 import "./colors.css";
+
 function Colors() {
+  function change(e) {
+    const element = document.getElementById("content");
+    element.style.backgroundColor = e;
+    const label = document.getElementById("label");
+    label.style.backgroundColor = e;
+  }
   return (
-    <div className="allColor">
+    <div className="allColor" id="content">
       <div className="wrapper">
         <div className="holder">
-          <label htmlFor="color">
-            <div className="icon">
-              <i className="fa-solid fa-palette"></i>
-            </div>
+          <label htmlFor="color" id="label">
+            <div className="icon"></div>
           </label>
-          <input type="color" id="color" />
+          <input
+            type="color"
+            id="color"
+            onChange={(e) => change(e.target.value)}
+          />
         </div>
       </div>
       <footer>
