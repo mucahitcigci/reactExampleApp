@@ -13,7 +13,7 @@ function Colors() {
       <div className="wrapper">
         <div className="holder">
           <label htmlFor="color" id="label">
-            <div className="icon"></div>
+            <div className="icon">Choose Color </div>
           </label>
           <input
             type="color"

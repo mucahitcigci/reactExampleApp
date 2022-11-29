@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Contact, Home, Profiles } from "./pages";
+import { About, Contact, Home, Profiles, PostDetail } from "./pages";
 import MyNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,6 +16,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/profiles" element={<Profiles />} />
+          <Route path="/postdetail" element={<PostDetail />} />
         </Routes>
       </BrowserRouter>
       <Footer />
