@@ -1,0 +1,21 @@
+.footerUl {
+  columns: 4;
+  -webkit-columns: 3;
+  -moz-columns: 4;
+  text-align: left;
+}
+.footer {
+  background-color: #f5ebe0;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 2rem;
+  top: 20px;
+  width: 100%;
+}
+.copyright {
+  background-color: #f0dbdb;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 0.2rem;
+  width: 100%;
+}

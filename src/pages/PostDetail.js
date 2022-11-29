@@ -1,7 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-
+import "./postDetail.css";
+import { MdCall } from "@react-icons/all-files/md/MdCall";
+import { FaCity } from "react-icons/fa";
+import { BiStreetView } from "react-icons/bi";
+import { TbNumbers } from "react-icons/tb";
 function PostDetail() {
   const location = useLocation();
   const gonderi = location.state.postBilgileri;
@@ -43,12 +47,21 @@ function PostDetail() {
             justo eu convallis placerat, felis enim.
           </p>
           <h3 className="my-3">User Address Details</h3>
-          <ol>
-            <li>{gonderi.address.street}</li>
-            <li>{gonderi.address.city}</li>
-            <li>{gonderi.address.zipcode}</li>
-            <li>{gonderi.phone} </li>
-          </ol>
+          <ul className="listUl">
+            <li>
+              <BiStreetView /> {gonderi.address.street}
+            </li>
+            <li>
+              <FaCity /> {gonderi.address.city}
+            </li>
+            <li>
+              <TbNumbers /> {gonderi.address.zipcode}
+            </li>
+            <li>
+              {" "}
+              <MdCall /> {gonderi.phone}{" "}
+            </li>
+          </ul>
         </div>
       </div>
 
