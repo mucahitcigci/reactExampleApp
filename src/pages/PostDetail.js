@@ -6,6 +6,9 @@ import { MdCall } from "@react-icons/all-files/md/MdCall";
 import { FaCity } from "react-icons/fa";
 import { BiStreetView } from "react-icons/bi";
 import { TbNumbers } from "react-icons/tb";
+import { EditText, EditTextarea } from "react-edit-text";
+import "react-edit-text/dist/index.css";
+
 function PostDetail() {
   const location = useLocation();
   const gonderi = location.state.postBilgileri;
@@ -40,16 +43,19 @@ function PostDetail() {
 
         <div className="col-md-4">
           <h3 className="my-3">{gonderi.company.name}</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-            euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem,
-            adipiscing in adipiscing et, interdum nec metus. Mauris ultricies,
-            justo eu convallis placerat, felis enim.
-          </p>
+
+          <EditTextarea
+            defaultValue="   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              viverra euismod odio, gravida pellentesque urna varius vitae. Sed
+              dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris
+              ultricies, justo eu convallis placerat, felis enim."
+          />
+
           <h3 className="my-3">User Address Details</h3>
           <ul className="listUl">
             <li>
-              <BiStreetView /> {gonderi.address.street}
+              <BiStreetView />{" "}
+              <EditText name="textbox2" defaultValue={gonderi.address.street} />
             </li>
             <li>
               <FaCity /> {gonderi.address.city}

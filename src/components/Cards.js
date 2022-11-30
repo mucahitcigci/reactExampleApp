@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import CardItem from "./CardItem";
 import "./cards.css";
+import { AppContext } from "../context/Provider";
 const Cards = () => {
   //
   //
 
-  const [users, setUsers] = useState([]);
+  const { setUsers, users } = useContext(AppContext);
+
   const getData = async () => {
     const { data } = await axios.get(
       "https://jsonplaceholder.typicode.com/users?_limit=2"

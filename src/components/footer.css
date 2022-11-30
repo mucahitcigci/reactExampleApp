@@ -1,8 +1,10 @@
 .footerUl {
   columns: 4;
-  -webkit-columns: 3;
+  -webkit-columns: 2;
   -moz-columns: 4;
   text-align: left;
+  list-style-type: none;
+  padding-left: 150px;
 }
 .footer {
   background-color: #f5ebe0;
@@ -18,4 +20,12 @@
   bottom: 0;
   padding-bottom: 0.2rem;
   width: 100%;
+}
+ul a {
+  color: rgb(109, 59, 59);
+  text-decoration: none;
+  display: inline-block;
+}
+ul a:hover {
+  color: #f8a8a8;
 }
