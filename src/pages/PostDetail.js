@@ -14,6 +14,8 @@ function PostDetail() {
   const gonderi = location.state.postBilgileri;
 
   const [image, setImage] = useState([]);
+  const [name, setName] = useState(gonderi.name);
+  const [street, setStreet] = useState(gonderi.address.street); // sadece olduğu sayfada ise useState kullanılır
   const getDataPic = async () => {
     const { data } = await axios.get(
       "https://jsonplaceholder.typicode.com/photos?_limit=4"
@@ -24,6 +26,13 @@ function PostDetail() {
   useEffect(() => {
     getDataPic();
   }, []);
+
+  const updateName = (e) => {
+    setName(e.target.value);
+  };
+  const updateStreet = (e) => {
+    setStreet(e.target.value);
+  };
 
   return (
     <div className="container">
@@ -43,19 +52,22 @@ function PostDetail() {
 
         <div className="col-md-4">
           <h3 className="my-3">{gonderi.company.name}</h3>
-
           <EditTextarea
-            defaultValue="   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              viverra euismod odio, gravida pellentesque urna varius vitae. Sed
-              dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris
-              ultricies, justo eu convallis placerat, felis enim."
+            onChange={updateName}
+            value={name}
+            defaultValue={name}
           />
-
           <h3 className="my-3">User Address Details</h3>
           <ul className="listUl">
             <li>
-              <BiStreetView />{" "}
-              <EditText name="textbox2" defaultValue={gonderi.address.street} />
+              {" "}
+              <BiStreetView />
+              <EditText
+                showEditButton
+                onChange={updateStreet}
+                value={street}
+                defaultValue={street}
+              />
             </li>
             <li>
               <FaCity /> {gonderi.address.city}
