@@ -19,11 +19,13 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.1",
     "mdb-react-ui-kit": "^5.0.0",
+    "pdf-viewer-reactjs": "^2.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-edit-text": "^5.0.2",
     "react-icons": "^4.7.1",
+    "react-pdf": "^6.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
