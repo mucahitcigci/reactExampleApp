@@ -1,12 +1,10 @@
-import { useContext } from "react";
-
-import { AppContext } from "../context/Provider";
+import logo512 from "../images/logo512.png";
 
 function About() {
-  const { count } = useContext(AppContext);
   return (
     <div>
-      <h1>About Us {count}</h1>
+      <h1>About Us </h1>
+      <img src={logo512} alt="" />
     </div>
   );
 }

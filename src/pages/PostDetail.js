@@ -16,6 +16,8 @@ function PostDetail() {
   const [image, setImage] = useState([]);
   const [name, setName] = useState(gonderi.name);
   const [street, setStreet] = useState(gonderi.address.street); // sadece olduğu sayfada ise useState kullanılır
+  const [city, setCity] = useState(gonderi.address.city);
+
   const getDataPic = async () => {
     const { data } = await axios.get(
       "https://jsonplaceholder.typicode.com/photos?_limit=4"
@@ -27,13 +29,18 @@ function PostDetail() {
     getDataPic();
   }, []);
 
+  //  Update Function start
   const updateName = (e) => {
     setName(e.target.value);
   };
   const updateStreet = (e) => {
     setStreet(e.target.value);
   };
+  const updateCity = (e) => {
+    setCity(e.target.value);
+  };
 
+  // Update Function Finish
   return (
     <div className="container">
       <h2>Api Detail</h2>
@@ -70,7 +77,13 @@ function PostDetail() {
               />
             </li>
             <li>
-              <FaCity /> {gonderi.address.city}
+              <FaCity />
+              <EditText
+                showEditButton
+                onChange={updateCity}
+                value={city}
+                defaultValue={city}
+              />
             </li>
             <li>
               <TbNumbers /> {gonderi.address.zipcode}
