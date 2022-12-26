@@ -3,16 +3,16 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Slider = () => {
   return (
-    <div className="mt-4 mb-4">
+    <div className="mt-4 mb-4" style={{ height: "100%" }}>
       {/* ************************** */}
 
       <Carousel fade>
         <Carousel.Item>
           <img
             width={900}
-            height={400}
+            height={600}
             className="d-block w-100"
-            src="https://picsum.photos/id/2/1600/400"
+            src="https://picsum.photos/id/2/1500/600"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -42,9 +42,9 @@ const Slider = () => {
         <Carousel.Item>
           <img
             width={900}
-            height={400}
+            height={600}
             className="d-block w-100"
-            src="https://picsum.photos/id/7/1600/400"
+            src="https://picsum.photos/id/7/1500/600"
             alt="Second slide"
           />
 
@@ -75,9 +75,9 @@ const Slider = () => {
         <Carousel.Item>
           <img
             width={900}
-            height={400}
+            height={600}
             className="d-block w-100"
-            src="https://picsum.photos/id/27/1600/400"
+            src="https://picsum.photos/id/27/1500/600"
             alt="Third slide"
           />
 

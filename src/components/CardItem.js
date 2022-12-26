@@ -47,7 +47,7 @@ function CardItem(props) {
               variant="outline-warning"
               size="lg"
             >
-              Go Details
+              Go API Details
             </Button>
           </div>
         </Card.Body>

@@ -64,7 +64,7 @@ function PostDetail() {
             value={name}
             defaultValue={name}
           />
-          <h3 className="my-3">User Address Details</h3>
+          <h3 className="my-3">Edit Text Area</h3>
           <ul className="listUl">
             <li>
               {" "}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import axios from "axios";
 import CardItem from "./CardItem";
 import "./cards.css";
@@ -21,8 +21,8 @@ const Cards = () => {
   }, []);
   return (
     <div>
-      <h2>Cards</h2>
-      {console.log(users)}
+      <h2>Cards and data from API</h2>
+
       <div className="list">
         {users.map((tekKullaniciBilgi) => {
           return (
