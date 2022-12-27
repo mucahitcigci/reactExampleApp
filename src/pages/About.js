@@ -10,10 +10,10 @@ function About() {
       <h1>About Us </h1>
       <div className="container">
         <div className="row">
-          <div className="col leftSide">
+          <div className="col-sm-4 leftSide">
             <img src={pic} alt="" />
             <h2> Mücahİt ÇIğcİ</h2>
-            <p>Front-End Web Developer</p>
+            <h5>Front-End Web Developer</h5>
             <h2>About Me</h2>
             <p>
               <span>
@@ -35,20 +35,46 @@ function About() {
               <li>
                 <a href="https://mucahitcigci.com" target="_blank">
                   {" "}
-                  <CgWebsite className="icn" /> https://mucahitcigci
+                  <CgWebsite /> https://mucahitcigci
                 </a>
               </li>
               <li>
-                <AiOutlinePhone className="icn" />{" "}
-                <a href="tel:+905449457677">05449457677</a>
+                <a href="tel:+905449457677">
+                  <AiOutlinePhone /> 05449457677
+                </a>
               </li>
               <li>
-                <BiMailSend className="icn" />{" "}
-                <a href="mailto:cmucayit@gmail.com">cmucayit@gmail.com</a>
+                <a href="mailto:cmucayit@gmail.com">
+                  <BiMailSend /> cmucayit@gmail.com
+                </a>
               </li>
             </ul>
+            <h2>Skils</h2>
+            <p>
+              React Js, Express Js, Java, JavaScript, Git, Github, Google Cloud
+              Technologies, HTML, CSS, Bootstrap, Tailwind, Android Studio,
+              Kotlin, Redux, PHP, MySQL, Python, C#, Adobe XD
+            </p>
+            <h2>Social Media</h2>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/mucahitcigci/"
+                target="_blank"
+              >
+                {" "}
+                <CgWebsite className="iconStyleCV" />
+              </a>
+              <a href="tel:+905449457677">
+                <AiOutlinePhone className="iconStyleCV" />
+              </a>
+              <a href="mailto:cmucayit@gmail.com">
+                <BiMailSend className="iconStyleCV" />
+              </a>{" "}
+            </p>
           </div>
-          <div className="col rightSide">s</div>
+          <div className="col-sm-8 rightSide">
+            <h2>work experience</h2> <hr />
+          </div>
         </div>
       </div>
     </div>
