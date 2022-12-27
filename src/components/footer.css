@@ -1,7 +1,7 @@
 .footerUl {
-  columns: 4;
-  -webkit-columns: 2;
-  -moz-columns: 4;
+  columns: 2;
+  -webkit-columns: 1;
+
   text-align: left;
   list-style-type: none;
   padding-left: 150px;
@@ -13,6 +13,11 @@
   padding-bottom: 2rem;
   top: 20px;
   width: 100%;
+}
+.footerUl p,
+li {
+  color: #2f3a42;
+  text-align: justify;
 }
 .copyright {
   background-color: #f0dbdb;
@@ -28,4 +33,30 @@ ul a {
 }
 ul a:hover {
   color: #f8a8a8;
+}
+.iconStyle {
+  font-size: xx-large;
+}
+.iconStyle a:hover {
+  color: #f8a8a8;
+}
+@media only screen and (max-width: 480px) {
+  .footerUl {
+    columns: 4;
+    -webkit-columns: 1;
+    -moz-columns: 4;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footerUl {
+    columns: 4;
+    -webkit-columns: 1;
+    -moz-columns: 4;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
 }

@@ -1,0 +1,31 @@
+/* Left Side Css */
+.leftSide {
+  background-color: #303a43;
+  color: beige;
+  text-align: justify;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+.leftSide img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  cursor: pointer;
+}
+.leftSide h2 {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.leftSide a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: beige;
+}
+
+/* Right Side Css */
+.rightSide {
+  color: #303a43;
+}
