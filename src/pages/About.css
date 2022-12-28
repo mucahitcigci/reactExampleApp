@@ -1,3 +1,9 @@
+.sections {
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0 2px 1px #ecc5d7;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 /* Left Side Css */
 .leftSide {
   background-color: #303a43;
@@ -5,6 +11,7 @@
   text-align: justify;
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
+  box-shadow: 0 50px 40px 0 rgb(146, 146, 146);
 }
 .leftSide img {
   display: block;
@@ -44,14 +51,22 @@ li {
 /* Right Side Css */
 .rightSide {
   color: #303a43;
+  text-align: left;
 }
 .rightSide h2 {
   color: #039ea4;
   text-transform: uppercase;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: left;
+
+  font-weight: bold;
+}
+.rightSide h3 {
+  font-weight: bold;
 }
 .rightSide hr {
   border: 4px solid #039ea4;
   border-radius: 5px;
+}
+.rightSide ul li {
+  padding-bottom: 0.6rem;
 }
