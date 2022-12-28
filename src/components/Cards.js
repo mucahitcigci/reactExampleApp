@@ -21,7 +21,7 @@ const Cards = () => {
   }, []);
   return (
     <div>
-      <h2>Cards and data from API</h2>
+      <h2>Cards and Data From API</h2>
 
       <div className="list">
         {users.map((tekKullaniciBilgi) => {

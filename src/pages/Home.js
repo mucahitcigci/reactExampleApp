@@ -5,11 +5,13 @@ import Slider from "../components/Slider";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       <Slider />
-      <Cards />
-      <h1 id="lorem">DOM Manipulation</h1>
-      <Colors />
+      <div className="container">
+        <Cards />
+        <h1 id="lorem">DOM Manipulation</h1>
+        <Colors />
+      </div>
     </div>
   );
 };

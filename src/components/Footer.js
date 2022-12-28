@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-8">
               <ul className="footerUl">
                 <li>
                   {" "}
@@ -73,7 +73,10 @@ const Footer = () => {
       </div>
 
       <div className="copyright">
-        <p> &copy; {new Date().getFullYear()} Copyright</p>
+        <p>
+          {" "}
+          &copy; {new Date().getFullYear()} Copyright . With by Mücahit ÇIĞCİ
+        </p>
       </div>
     </div>
   );

@@ -129,7 +129,7 @@ function About() {
             <h3>MARMARA UNIVERSITY ATATURK EDUCATION FACULTY</h3>
             <p>Computerized Instructional Technologies Instructor</p>
             <h3>UNIVERSITY OF ISTANBUL ODEF</h3>
-            <p>Siyaset Bilimi ve Uluslararası İlişkiler</p>
+            <p>Political Science and International Relations</p>
           </div>
         </div>
       </div>

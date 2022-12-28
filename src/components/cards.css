@@ -7,6 +7,9 @@
 .cardStyle {
   width: 40%;
 }
+.slider {
+  box-shadow: 0 5px 4px rgb(95, 94, 95);
+}
 @media only screen and (max-width: 480px) {
   .list {
     display: block;

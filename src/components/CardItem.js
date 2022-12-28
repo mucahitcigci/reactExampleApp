@@ -13,7 +13,7 @@ function CardItem(props) {
 
   return (
     <CardGroup className="cardStyle">
-      <Card className="m-4">
+      <Card className="m-4 slider">
         <a
           onClick={() => setOpen3(!open3)}
           aria-controls="example-collapse-text"

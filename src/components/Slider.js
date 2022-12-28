@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Slider = () => {
   return (
-    <div className="mt-4 mb-4" style={{ height: "100%" }}>
+    <div className=" mb-4 slider" style={{ height: "100%" }}>
       {/* ************************** */}
 
       <Carousel fade>
