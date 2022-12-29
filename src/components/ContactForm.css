@@ -1,0 +1,28 @@
+.contactInput {
+  border: none;
+  border-bottom: 2px solid rgb(235, 177, 177);
+  background-color: #f5ebe070;
+  box-shadow: 0 0.5px 2px salmon;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+.contactTxt {
+  border: none;
+  border-bottom: 2px solid rgb(235, 177, 177);
+  background-color: #f5ebe070;
+  box-shadow: 0 0.5px 2px salmon;
+  width: 100%;
+  height: 200px;
+}
+.contactImage {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid #f5ebe070;
+  box-shadow: salmon;
+}
+.btnContact {
+  border: none;
+}

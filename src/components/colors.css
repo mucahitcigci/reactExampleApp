@@ -26,10 +26,10 @@
   align-items: center;
   justify-content: center;
 }
-input {
+.colorInput {
   display: none;
 }
-label {
+.colorLabel {
   width: 160px;
   height: 50px;
   background-color: #ff9f9f;

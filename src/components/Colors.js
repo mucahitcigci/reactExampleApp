@@ -12,10 +12,11 @@ function Colors() {
     <div className="allColor" id="content">
       <div className="wrapper">
         <div className="holder">
-          <label htmlFor="color" id="label">
+          <label htmlFor="color" className="colorLabel" id="label">
             <div className="icon">Choose Color </div>
           </label>
           <input
+            className="colorInput"
             type="color"
             id="color"
             onChange={(e) => change(e.target.value)}

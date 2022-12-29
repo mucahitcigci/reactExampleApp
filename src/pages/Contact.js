@@ -1,11 +1,11 @@
 import React from "react";
-import Slider from "../components/Slider";
-
+import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <div>
-      <h1>Contact</h1>
-      <Slider />
+      <h1 className="sections">Contact</h1>
+
+      <ContactForm />
     </div>
   );
 }
