@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from "react";
 import Uploady from "@rpldy/uploady";
 import UploadPreview from "@rpldy/upload-preview";
 import UploadButton from "@rpldy/upload-button";
+import "./profiles.css";
 
 const PreviewsWithClear = () => {
   const previewMethodsRef = useRef();
@@ -18,7 +19,7 @@ const PreviewsWithClear = () => {
   }, [previewMethodsRef]);
 
   return (
-    <>
+    <div>
       <button className="btn btn-warning" onClick={onClear}>
         Clear {previews.length} previews
       </button>
@@ -29,7 +30,7 @@ const PreviewsWithClear = () => {
         previewMethodsRef={previewMethodsRef}
         onPreviewsChanged={onPreviewsChanged}
       />
-    </>
+    </div>
   );
 };
 
