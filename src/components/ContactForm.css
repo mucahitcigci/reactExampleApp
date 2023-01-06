@@ -25,4 +25,10 @@
 }
 .btnContact {
   border: none;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(235, 177, 177);
+  box-shadow: salmon;
+  background-color: rgba(250, 128, 114, 0.089);
+  font-family: "Courier New", Courier, monospace;
 }
